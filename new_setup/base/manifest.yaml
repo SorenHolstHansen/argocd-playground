@@ -1,9 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: guestbook
-  annotations:
-    a: b
+  name: guestbook-ks
 spec:
   destination:
     namespace: default
@@ -11,4 +9,4 @@ spec:
   project: default
   source:
     repoURL: https://github.com/SorenHolstHansen/argocd-playground
-    path: old_setup
+    path: new_setup

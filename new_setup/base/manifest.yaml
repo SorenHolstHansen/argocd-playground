@@ -9,4 +9,4 @@ spec:
   project: default
   source:
     repoURL: https://github.com/SorenHolstHansen/argocd-playground
-    path: new_setup
+    path: new_setup/base

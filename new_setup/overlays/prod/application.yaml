@@ -1,0 +1,9 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: guestbook-ks
+  namespace: argocd
+spec:
+  source:
+    repoURL: https://github.com/SorenHolstHansen/argocd-playground
+    path: new_setup/overlays/prod

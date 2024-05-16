@@ -8,5 +8,5 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    repoURL: https://github.com/argoproj/argocd-example-apps.git
-    path: guestbook
+    repoURL: https://github.com/SorenHolstHansen/argocd-playground
+    path: old_setup

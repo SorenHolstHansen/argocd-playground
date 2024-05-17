@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: guestbook-ks
+  name: guestbook
   namespace: argocd
 spec:
   project: default
@@ -9,13 +9,13 @@ spec:
     repoURL: https://github.com/SorenHolstHansen/argocd-playground
     path: new_setup/base
   destination:
-    namespace: app
+    namespace: default
     server: https://kubernetes.default.svc
 
-  syncPolicy:
-    syncOptions:
-    - CreateNamespace=true
+  # syncPolicy:
+  #   syncOptions:
+  #   - CreateNamespace=true
 
-    automated:
-      selfHeal: true
-      prune: true
+  #   automated:
+  #     selfHeal: true
+  #     prune: true

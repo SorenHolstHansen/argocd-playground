@@ -3,10 +3,10 @@ kind: Application
 metadata:
   name: guestbook
 spec:
-  destination:
-    namespace: app
-    server: https://kubernetes.default.svc
-  project: default
   source:
     repoURL: https://github.com/SorenHolstHansen/argocd-playground
     path: old_setup
+  project: default
+  destination:
+    namespace: app
+    server: https://kubernetes.default.svc
